@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(10th-project-images/background.png);
+  background-size: cover;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  overflow: hidden;
+}
+.logo {
+  width: 125px;
+  height: 50px;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+.logo img {
+  width: 100%;
+  margin-top: 7px;
+}
+.menu {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.menu li {
+  list-style: none;
+  float: left;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(71, 71, 71);
+  cursor: pointer;
+}
+.menu li:hover {
+  color: black;
+}
+.nav .search-box {
+  margin-right: 60px;
+  margin-top: 28px;
+  width: 200px;
+  height: 30px;
+  position: relative;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.search-box input {
+  padding-left: 35px;
+  padding-right: 25px;
+  width: 100%;
+  font-size: 13px;
+  height: 100%;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.search-box a {
+  color: black;
+  position: absolute;
+  height: 24px;
+  top: 10%;
+  left: 0%;
+  border-right: 2px solid grey;
+  padding-right: 5px;
+  padding-left: 8px;
+  cursor: pointer;
+}
+.content {
+  position: absolute;
+  top: 250px;
+  left: 100px;
+  color: rgb(41, 40, 40);
+}
+.greeting {
+  font-size: 25px;
+}
+.name {
+  font-size: 75px;
+  font-weight: 600;
+  margin-top: -20px;
+  margin-left: -4px;
+  color: rgb(41, 40, 40);
+}
+.job {
+  font-size: 30px;
+  margin-top: -10px;
+  display: flex;
+}
+.job .type {
+  color: rgb(1, 209, 224);
+  animation: type 5s steps(15) infinite;
+  -webkit-animation: type 5s steps(15) infinite;
+  border-right: 4px solid rgb(1, 209, 224);
+  margin-left: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+  50% {
+    width: 15ch;
+  }
+  100% {
+    width: 0ch;
+  }
+}
+.buttons {
+  padding-left: 30px;
+}
+.buttons .about,
+.buttons .follow {
+  font-size: 16px;
+  padding: 7px 18px;
+  border: none;
+  background: linear-gradient(90deg, violet, blue);
+  color: white;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  margin-right: 15px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.buttons button:hover {
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+}
+.girl-image {
+  height: 90vh;
+  width: 550px;
+  position: absolute;
+  top: 70px;
+  right: 60px;
+  background-image: url(10th-project-images/girl.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.media-content {
+  font-size: 17px;
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  color: grey;
+  right: 30px;
+  bottom: 40px;
+}
+.media-content .fa-facebook-f:hover {
+  color: blue;
+}
+.media-content .fa-instagram:hover {
+  color: rgb(255, 0, 255);
+}
+.media-content .fa-x-twitter:hover {
+  color: black;
+}
+.media-content .fa-youtube:hover {
+  color: red;
+}
+.media-content .fa-reddit-alien:hover {
+  color: rgb(255, 60, 0);
+}
