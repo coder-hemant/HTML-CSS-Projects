@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', 'Poppins', 'Montserrat', 'Nunito Sans', 'sans serif';
+}
+body {
+  font-family: 'Roboto', 'Poppins', 'Montserrat', 'Nunito Sans', 'sans serif';
+}
+.main-box {
+  height: 100vh;
+  width: 100%;
+  background-image: url(3rd-Project-images/bg-image-real.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+#check {
+  opacity: 0;
+  position: absolute;
+}
+.button-1 i {
+  position: absolute;
+  top: 5px;
+}
+.button-1 i:hover {
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  top: 6px;
+  cursor: pointer;
+}
+.sidebar {
+  position: fixed;
+  height: 100vh;
+  width: 250px;
+  left: -250px;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  transition: all 0.2s;
+  backdrop-filter: blur(3px);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+.sidebar-header {
+  width: 100%;
+  height: 60px;
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+  position: absolute;
+}
+.sidebar-header a {
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  font-size: 23px;
+  line-height: 60px;
+  left: 50px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.sidebar .button-2 i {
+  font-size: 25px;
+  position: absolute;
+  right: 15px;
+  line-height: 60px;
+  cursor: pointer;
+}
+.sidebar .button-2 i:hover {
+  font-size: 24px;
+  line-height: 61px;
+}
+.button-1 i {
+  position: absolute;
+  left: 25px;
+  font-size: 30px;
+  color: white;
+  line-height: 60px;
+  cursor: pointer;
+}
+.menu {
+  width: 100%;
+  position: absolute;
+  top: 70px;
+}
+li {
+  margin-top: 6px;
+  list-style-type: none;
+  padding: 14px 0 14px 20px;
+}
+li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  font-size: 17px;
+}
+li i {
+  width: 25px;
+  font-size: 17px;
+  color: white;
+}
+.sidebar .menu li:hover {
+  border-left: 1px solid white;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+}
+.social-media {
+  position: absolute;
+  bottom: 25px;
+  left: 50px;
+  font-size: 20px;
+}
+.social-media i {
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 0.6);
+}
+#check:checked ~ .sidebar {
+  left: 0;
+}
+#check:checked ~ .button-1 {
+  opacity: 0;
+}
+#check:checked ~ .sidebar .button-2 i{
+  opacity: 1;
+}
+.fa-facebook-f:hover {
+  color: rgb(70, 70, 255);
+  opacity: 1;
+}
+.fa-instagram:hover {
+  color: rgb(216, 25, 191);
+  opacity: 1;
+}
+.fa-x-twitter:hover {
+  color: black;
+  opacity: 1;
+}
+.fa-linkedin-in:hover {
+  color: white;
+}
+.fa-youtube:hover {
+  color: red;
+}

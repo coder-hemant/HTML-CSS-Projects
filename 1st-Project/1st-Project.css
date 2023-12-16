@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700;6..12,800&family=Roboto:wght@100;400;500;700&display=swap');
+* {
+  font-family: roboto;
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+  font-size: 20px;
+  color: rgb(214, 211, 211);
+}
+.profile-card {
+  margin: 150px auto;
+  width: 290px;
+  height: 320px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: 0 3px 10px ;
+}
+.section-1 {
+  width: 100%;
+  height: 125px;
+  background-color: rgb(30, 83, 255);
+  border-radius: 20px 20px 0 0;
+  position: relative;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -ms-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
+}
+.profile-pic {
+  width:115px;
+  height: 115px;
+  border: 3px solid white;
+  outline: 3px solid rgb(30, 83, 255);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  top: 18px;
+  left: 85px;
+  background-image: url(1st-Project-images/RDJ.jpg);
+  background-size: cover;
+}
+.section-2 {
+  padding: 20px;
+  padding-top: 25px;
+}
+.name {
+  padding-left: 110px;
+  font-weight: 700;
+  font-size: 18px;
+  color: rgb(53, 52, 52);
+  margin-bottom: 3px;
+}
+.work {
+  color: rgb(80, 79, 79);
+  font-weight: 500;
+  font-size: 13px;
+  padding-left: 78px;
+  margin-bottom: 10px;
+}
+.networks {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 170px;
+  margin-left: 43px;
+  margin-bottom: 15px;
+}
+.facebook,
+.instagram,
+.X,
+.YouTube {
+  width: 28px;
+  height: 28px;
+}
+.fb-image,
+.ig-image,
+.X-image,
+.YT-image {
+  width: 100%;
+}
+.facebook {
+  background-image: url(1st-Project-images/facebook.png);
+  background-size: cover;
+}
+.X {
+  background-image: url(1st-Project-images/twitter.png);
+  background-size: cover;
+}
+.instagram {
+  background-image: url(1st-Project-images/instagram.png);
+  background-size: cover;
+}
+.YouTube {
+  background-image: url(1st-Project-images/youtube.png);
+  background-size: cover;
+}
+.sub-contact {
+  width: 250px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 13px;
+}
+button {
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+  background-color: #1e53ff;
+  padding: 7px 20px;
+  border: none;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.interactions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heart,
+.comment,
+.share {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(73, 72, 72);
+  display: flex;
+  width: px;
+  height: 20px;
+  padding-top: 6px;
+  padding-left: px;
+  padding-right: 0;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.heart-image,
+.comment-image,
+.share-image {
+  width: 13px;
+  height: 13px;
+  /* background-color: yellow; */
+  margin-right: 3px;
+  vertical-align: middle;
+}
+
+.heart-image {
+  background-image: url(1st-Project-images/heart.png);
+  background-size: cover;
+  background-position-y: px;
+}
+.comment-image {
+  background-image: url(1st-Project-images/comment.png);
+  background-size: contain;
+}
+.share-image {
+  background-image: url(1st-Project-images/share.png);
+  background-size: contain;
+}

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: lightblue;
+}
+.container {
+  /* height: 500px; */
+  width: 400px;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+.container .top {
+  height: 90px;
+  color: white;
+  background: linear-gradient(90deg, rgb(0, 0, 255)0%, rgb(255, 0, 0)100%);
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  text-align: center;
+  line-height: 300%;
+  border-radius: 15px 15px 0 0;
+  -webkit-border-radius: 15px 15px 0 0;
+  -moz-border-radius: 15px 15px 0 0;
+  -ms-border-radius: 15px 15px 0 0;
+  -o-border-radius: 15px 15px 0 0;
+}
+form {
+  padding: 15px 40px 50px 40px;
+}
+.section {
+  width: 100%;
+  height: 40px;
+  background-color: yellow;
+  position: relative;
+  margin-top: 15px;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+.bottom .section input {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  outline: none;
+  border: none;
+  padding-left: 20px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  background-color: white;
+}
+.bottom .section input[type="text"],
+.bottom .section input[type="password"] {
+  border: 1px solid lightgray;
+}
+.bottom .section label {
+  position: absolute;
+  left: 20px;
+  top: 8px;
+  color: grey;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+.bottom .section input[type="text"]:focus,
+.bottom .section input[type="password"]:focus {
+  border: 1px solid blue;
+}
+.bottom .section input:focus ~ label,
+.bottom .section input:valid ~ label {
+  font-size: 13px;
+  top: -9px;
+  /* transform: translateY(-17.5px);
+  -webkit-transform: translateY(-17.5px);
+  -moz-transform: translateY(-17.5px);
+  -ms-transform: translateY(-17.5px);
+  -o-transform: translateY(-17.5px); */
+  background-color: white;
+  color: black;
+}
+#three {
+  margin-top: 17px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+#three:active {
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  
+}
+.section .login-button {
+  background: linear-gradient(90deg, rgb(0, 0, 255)0%, rgb(255, 0, 0)100%);
+  color: white;
+  font-size: 18px;
+}
+.instructions {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 8px;
+  vertical-align: baseline;
+}
+a {
+  text-decoration: none;
+  color: rgb(39, 100, 233);
+}
+a:hover {
+  text-decoration: underline;
+}
+#check {
+  transform: translateY(2px);
+  -webkit-transform: translateY(2px);
+  -moz-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  -o-transform: translateY(2px);
+}
+.sign-up-link {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+}
